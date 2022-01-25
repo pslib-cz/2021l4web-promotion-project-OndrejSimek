@@ -1,2 +1,4 @@
-# 2021l4web-promotion-project-OndrejSimek
-2021l4web-promotion-project-OndrejSimek created by GitHub Classroom
+
+# Promotion project L4
+**Autor:** Šimek Ondřej
+* [Web](https://pslib-cz.github.io/2021l4web-promotion-project-OndrejSimek/)
