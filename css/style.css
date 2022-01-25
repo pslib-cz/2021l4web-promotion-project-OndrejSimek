@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+:root {
+    --white: #eeeeee;
+    --gray: #222831;
+    --light-gray: #393e46;
+}
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+img {
+    width: 100%;
+}
+
+a {
+    display: block;
+    color: var(--white);
+    text-decoration: none;
+}
+
+li {
+    display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+h1 {
+    font-size: 40px;
+    color: var(--white);
+}
+
+p {
+    margin: 0;
+    color: var(--white);
+}
+
+.header {
+    background-color: var(--gray);
+    height: 100px;
+    display: flex;
+}
+
+.header__svg {
+    margin: 10px;
+}
+
+.header__nav {
+    display: none;
+}
+
+.main {
+    background-color: var(--light-gray);
+}
+
+.beer {}
+
+.beer__figure {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.beer__btn {
+    color: #fd7014;
+    width: fit-content;
+    border: 3px solid #fd7014;
+    border-radius: 30px;
+    padding: 10px 1em;
+    margin: 0 auto;
+}
