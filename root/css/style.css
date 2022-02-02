@@ -2,8 +2,8 @@
 
 :root {
     --white: #eeeeee;
-    --gray: #222831;
-    --light-gray: #393e46;
+    --gray: #17191d;
+    --light-gray: #26282c;
 }
 html {
     font-family: 'Open Sans', sans-serif;
@@ -30,6 +30,9 @@ h1 {
     font-size: 40px;
     color: var(--white);
 }
+h2, h3 {
+    color: #fd7014;
+}
 
 p {
     margin: 0;
@@ -52,20 +55,47 @@ p {
 
 .main {
     background-color: var(--light-gray);
+    padding-top: 20px;
+    padding: 0 20px;
 }
 
-.beer {}
-
+.beer__p {
+    font-size: 20px;
+    text-align: center;
+}
+.beer {
+    padding-top: 20px;
+}
 .beer__figure {
-    width: 100px;
+    width: 40vw;
     margin: 0 auto;
 }
 
+
 .beer__btn {
     color: #fd7014;
-    width: fit-content;
+    width: 100px;
     border: 3px solid #fd7014;
     border-radius: 30px;
     padding: 10px 1em;
     margin: 0 auto;
+    text-align: center;
+}
+
+.gallery__image {
+    width: 150px;
+    margin: 20px auto;
+}
+.visit_us {
+    padding-bottom: 10px;
+}
+.visit_us__text {
+    padding: 5px 0;
+}
+.footer {
+    background-color: var(--gray);
+    padding: 10px 20px;
+}
+.footer p {
+    padding: 5px 0;
 }
