@@ -8,6 +8,7 @@
     <title>Jelen</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icomoon/style.css">
 </head>
 
 <body>
@@ -24,7 +25,7 @@
         </svg>
         <h1>Jelen</h1>
         <nav class="header__nav">
-            <ul>
+            <ul class="header__nav__list">
                 <li>Produkty</li>
                 <li>O nás</li>
                 <li>Galerie</li>
@@ -55,7 +56,7 @@
             </section>
             <section class="gallery">
                 <h2>Galerie</h2>
-                <div class="gallery__content">
+                <div class="gallery__container">
                     <figure class="gallery__image">
                         <img src="../dokumenatce/Images/lahev.png" alt="Pivo lahev">
                     </figure>
@@ -72,14 +73,19 @@
                 <p class="visit_us__text">Můžete nás navštívit v restauraci Zlatý Jelen, kde se pivo vaří.</p>
                 <p class="visit_us__text">Palackého 4631/61a, 46604 Jablonec nad Nisou</p>
                 <a href="">
-                    <figure><img src="../dokumenatce/images/lokace.png" alt="Mapa k hospodě"></figure>
+                    <figure class="footer__img_map"><img src="../dokumenatce/images/lokace.png" alt="Mapa k hospodě"></figure>
                 </a>
             </section>
     </main>
     <footer class="footer">
         <p>Můžete nás sledovat na:</p>
-        <a><p>Alkohol za pivo nepatří!</p></a>
-        <a><p>www.napivosrozumem.cz</p></a>
+       <div class="footer__icons">
+            <a href="#"><span class="icon-facebook1 footer__icon"></span></a>
+            <a href="#"><span class="icon-instagram footer__icon"></span></a>
+            <a href="#"><span class="icon-twitter footer__icon"></span></a>
+       </div>
+        <p>Alkohol za volant nepatří!</p>
+        <a href="https://napivosrozumem.cz/"><p>www.napivosrozumem.cz</p></a>
     </footer>
 </body>
 
