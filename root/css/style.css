@@ -46,17 +46,44 @@ p {
 
 .header {
     background-color: var(--gray);
+}
+.header--width {
     height: 100px;
     display: flex;
     padding: 0 20px;
 }
 
 .header__svg {
-    margin: 10px 0;
+    margin: 20px 0;
 }
-
 .header__nav {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100vw;
+    background-color: var(--gray);
+}
+.header__nav--hidden {
     display: none;
+}
+.header__nav__list {
+    margin:0;
+    padding: 0;
+    justify-content: center;
+}
+.header__nav__list li {
+    text-align: center;
+    border-top: 3px solid var(--light-gray);
+
+}
+.header__nav__list li a {
+    height: 45px;
+    line-height: 45px;
+}
+.header__hamburger_menu {
+    height: fit-content;
+    margin: 41px 0;
+    margin-left: auto;
 }
 
 .main {
@@ -76,7 +103,7 @@ p {
 
 .beer__figure {
     width: 100px;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 
@@ -129,10 +156,17 @@ p {
 }
 
 @media (min-width: 540px) {
+    .header--width {
+        max-width:600px;
+        display: flex;
+        margin:0 auto;
+    }
     .header__nav {
         display: block;
         align-self: center;
         width: calc(540px - 80px - 90px);
+        margin-left: auto;
+        position: initial;
     }
 
     .header__nav__list {
@@ -141,9 +175,13 @@ p {
         padding: 0;
         justify-content: space-evenly;
     }
+    .header__nav__list li{
+        border: none;
+    }
     .gallery__container {
         display: flex;
         flex-wrap: wrap;
+        max-width: 600px;
     }
     .gallery__image > img {
         height: 100%;
@@ -151,6 +189,17 @@ p {
     }
     .gallery__image {
         height: 50vw;
+        max-height: 500px;
         width: auto;
+    }
+    .main > * {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .gallery__image:last-child {
+        max-height: 400px;
+    }
+    .header__hamburger_menu {
+        display: none;
     }
 }
